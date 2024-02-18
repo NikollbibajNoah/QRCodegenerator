@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #101010;
+    display: flex;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background: red;
+    margin: 100px auto;
+}
+
+.container > #code {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+}
+
+#code > #qrcode {
+    width: 80%; /*How much space between code and border!*/
+    height: 80%; /*How much space between code and border!*/
+    margin: auto;
+}
+
+.container > .controls {
+    margin-top: 48px;
+    width: 100%;
+}
+
+.controls > .header {
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.controls > .input {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.input > #contentInput {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 0 6px;
+    border: 2px solid #202020;
+    outline: none;
+    box-sizing: border-box;
+    transition: 200ms border ease-in-out;
+    background: #343434;
+    color: #fff;
+}
+
+.input > #contentInput:focus {
+    border: 4px solid #09b2f5;
+}
+
+.input > .export {
+    margin-top: 16px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.export > button {
+    outline: none;
+    width: 100px;
+    height: 50px;
+    background: #343434;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    border: 2px solid #202020;
+    cursor: pointer;
+    transition: 200ms border ease-in-out;
+    font-size: 14px;
+}
+
+.export > button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.export > #jpg {
+    cursor: not-allowed;
+}
+
+.export > button:active {
+    border: 4px solid #09b2f5;
+}

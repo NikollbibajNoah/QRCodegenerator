@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>QRCode Generator</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div id="code">
+        <div id="qrcode">
+          <!--Inserted Here-->
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="header">
+          <h2>Properties</h2>
+        </div>
+
+        <div class="input">
+          <input type="text" placeholder="Enter Your Text here..." id="contentInput">
+          <div class="export">
+            <button id="png"><a href="#">Save PNG</a></button>
+            <button id="jpg">Save JPG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./qrcode.js" type="text/javascript"></script>
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+</html>
