@@ -1,4 +1,8 @@
 # QRCodegenerator
+
+## Demopage
+https://qrcodeerstellen.netlify.app/
+
 Creating very fast a simple qr-code and save it as png!
 Created with Javascript using the qrcode.js library
 
